@@ -39,7 +39,7 @@ variable "mysql_server_backup_retention_days" {
 variable "mysql_server_flexible_sku_name" {
   description = "The SKU Name for the MySQL Flexible Server"
   type        = string
-  default     = "B_Standard_B1Ms"
+  default     = "B_Standard_B1ms"
 }
 
 variable "mysql_server_storage_size_gb" {
