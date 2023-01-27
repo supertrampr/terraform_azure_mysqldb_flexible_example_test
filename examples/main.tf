@@ -62,6 +62,11 @@ resource "azurerm_mysql_flexible_server" "example" {
   backup_retention_days = var.mysql_server_backup_retention_days
   sku_name              = var.mysql_server_flexible_sku_name
   version               = "5.7"
+
+  storage {
+    auto_grow_enabled = false
+    size_gb           = var.mysql_server_storage_size_gb
+  }
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
